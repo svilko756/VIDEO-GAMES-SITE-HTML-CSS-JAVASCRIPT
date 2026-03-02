@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Контакти</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Връзка към външен CSS файл  -->
+        <link href="contact.css" rel="stylesheet" type="text/css"/>
+         <!-- Връзка към Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!---Икононка -->
+        <link rel="icon" href="images/5930147.ico" type="image/x-icon">
+    </head>
+    <body>
+            
+           <!--Хедър -->
+        <header>  
+                <div class="header">
+                <div class="movedown"> 
+                    <div class ="header-row">
+                        <div class ="header-row(1)">
+                        <!--Лого -->  
+                    <a href="index.html">
+                      <img  class ="logo" src="683-6838284_pc-logo-png.png" alt="logo"/>
+                    </a>
+                        </div>
+                        <div class ="header-row(2)">
+                   <!--Заглавие -->
+                    <h1>
+                        Компютърни игри
+                    </h1>
+                        </div>
+                  
+                    </div>
+                </div>
+             <!--Навигация -->     
+         <nav>
+            <ul class = "menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="games.html">Игри</a></li>
+                <li><a href="reviews.html">Ревюта</a></li>
+                <li><a href="upcoming.html">Предстоящи игри</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="contact.html">Контакти</a></li>           
+            </ul>
+        </nav>
+       </div>
+       </header>
+       
+           <!--Основно съдържание -->
+         <main>  
+            <h2>КОНТАКТНА СТРАНИЦА</h2>
+                <!-- Контейнер за контактното съдържание -->
+            <div class ="container">
+                <!-- Google Maps iframe за показване на местоположението -->
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.287119407487!2d25.95130067601274!3d43.84189997109372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae60c0605ad443%3A0x74a6e00860fe4b8d!2z0KDRg9GB0LUg0KbQtdC90YLRitGALCDRg9C7LiDigJ7QktC40LTQuNC94oCcIDcsIDcwMTIg0KDRg9GB0LU!5e1!3m2!1sbg!2sbg!4v1766749548570!5m2!1sbg!2sbg" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <div class ="contact-form">
+                 <!-- Поле за име  -->
+            <input type ="text" id ="first" name ="first" placeholder ="Име" required>
+                 <!-- Поле за фамилия -->
+            <input type ="text" id="last" name ="last" placeholder ="Фамилия" required>
+                  <!-- Поле за имейл -->
+            <input type ="email" id="email" name ="Email" placeholder ="Имейл" required> 
+                  <!-- Текстово поле за съобщение -->
+            <textarea rows="6" id="text" cols="70" name="Message" placeholder="Съобщение" required></textarea>
+                  <!-- Бутон за изпращане на формата с Javascipt свойства -->
+            <button type="submit" id="button" onclick="alert('Здравейте,получихме вашите данни, ще се свържем с вас възможно най-скоро :)')" disabled="" >Изпратете вашето съобщение</button>
+           
+             </div>
+            </div>
+         </main>
+             <!-- Футър (долна част на сайта) с авторски права и информация -->
+       <footer class="footer">
+            <p class="text_footer">&reg; Svilen Hristov Hristov <br>126425329</p>
+        </footer>
+            <!-- Връзка към външен JavaScript-->
+     <script src="contacts.js" type="text/javascript"></script> 
+    </body>
+</html>
+

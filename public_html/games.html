@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Най-продавани игри</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Връзка към външен CSS файл  -->
+        <link href="games.css" rel="stylesheet" type="text/css"/>
+          <!-- Връзка към Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+         <!---Икононка -->
+        <link rel="icon" href="images/5930147.ico" type="image/x-icon">
+        <!-- Връзка към външен JavaScript-->
+        <script src="games.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Хедър -->
+        <header>  
+                <div class="header">
+                <div class="movedown"> 
+                    <div class ="header-row">
+                        <div class ="header-row(1)">
+                        <!--Лого -->  
+                    <a href="index.html">
+                      <img  class ="logo" src="683-6838284_pc-logo-png.png" alt="logo"/>
+                    </a>
+                        </div>
+                        <div class ="header-row(2)">
+                   <!--Заглавие -->
+                    <h1>
+                        Компютърни игри
+                    </h1>
+                        </div>
+                  
+                    </div>
+                </div>
+             <!--Навигация -->     
+         <nav>
+            <ul class = "menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="games.html">Игри</a></li>
+                <li><a href="reviews.html">Ревюта</a></li>
+                <li><a href="upcoming.html">Предстоящи игри</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="contact.html">Контакти</a></li>           
+            </ul>
+        </nav>
+       </div>
+       </header>
+       
+           <!--Основно съдържание -->
+      
+
+     <main>
+    <!-- Заглавие -->
+    <h2>Най-продаваните игри</h2>
+    
+    <!-- Първа игра -->
+    <section class="game-section">
+        <h3>Tetris</h3>
+        <p>Тетрис е най-продаваната пъзел игра в света, създадена от Алексей Пажитнов през 1984 г. В нея играчи подреждат падащи фигури, за да запълват и изчистват линии. С над 520 милиона продадени копия към 2024 г., тя е втората най-успешна игрова серия в историята.</p>
+        
+        <!-- Интерактивно изображение на Tetris със Javascripit манипулации  --> 
+             
+        <img id="tetris" src="images/ttt.jpg" alt="Tetris" onclick="f1()" ondblclick="f2()">
+        
+        <!-- Статистика за Tetris -->
+        <div class="stats">
+            
+            <div class="stat-item"><strong>Продажби:</strong> 550+ милиона</div>
+           
+            <div class="stat-item"><strong>Първо издание:</strong> 1984</div>
+        </div>
+    </section>
+    
+    <!-- Втора игра -->
+    <section class="game-section">
+        <h3>Minecraft</h3>
+        <p>Minecraft е най-продаваната игра в историята с над 350 милиона копия (към 2025 г.) и 140 милиона месечни играчи. Съчетава креативност и изследване в генерирани от процедури светове, спечелвайки множество награди и статут на културен феномен, особено сред поколение Z.</p>
+        
+        <!-- Интерактивно изображение на Minecraft със Javascripit манипулации-->
+        <img id="minecraft" src="images/minecraft.cover.jpg" alt="Minecraft" onclick="f3()" ondblclick="f4()">
+        
+        <!-- Статистика за Minecraft -->
+        <div class="stats">
+            <div class="stat-item"><strong>Продажби:</strong> 300+ милиона</div>
+            <div class="stat-item"><strong>Първо издание:</strong> 2009</div>
+        </div>
+    </section>
+    
+    <!-- Трета игра-->
+    <section class="game-section">
+        <h3>Grand Theft Auto V</h3>
+        <p>Grand Theft Auto V (2013) от Rockstar Games е екшън-приключенска игра, която счупи световни рекорди по продажби. Печели $1 милиард само в първите три дни, превръщайки се в най-бързо продаваният развлекателен продукт в историята.</p>
+        
+        <!-- Интерактивно изображение на GTA V със Javascripit манипулаци -->
+        <img id="gta5" src="images/gta5-wallpaper.jpg" alt="GTA V" onclick="f5()" ondblclick="f6()">
+        
+        <!-- Статистика за GTA V -->
+        <div class="stats">
+            <div class="stat-item"><strong>Продажби:</strong> 220+ милиона</div>
+            <div class="stat-item"><strong>Първо издание:</strong> 2013</div>
+        </div>
+    </section>
+</main>
+          <!-- Футър (долна част на сайта) с авторски права и информация -->
+        <footer class="footer">
+            <p class="text_footer">&reg; Svilen Hristov Hristov <br>126425329</p>
+        </footer>
+    </body>
+</html>

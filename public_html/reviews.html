@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ревюта на игри</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Връзка към външен CSS файл  -->
+        <link href="reviews.css" rel="stylesheet" type="text/css"/>
+         <!-- Връзка към Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!---Икононка -->
+        <link rel="icon" href="images/5930147.ico" type="image/x-icon">
+         <!-- Връзка към външен JavaScript-->
+        <script src="reviews.js" type="text/javascript"></script>
+    </head>
+<body>
+     <!--Хедър -->
+        <header>  
+                <div class="header">
+                <div class="movedown"> 
+                    <div class ="header-row">
+                        <div class ="header-row(1)">
+                        <!--Лого -->  
+                    <a href="index.html">
+                      <img  class ="logo" src="683-6838284_pc-logo-png.png" alt="logo"/>
+                    </a>
+                        </div>
+                        <div class ="header-row(2)">
+                   <!--Заглавие -->
+                    <h1>
+                        Компютърни игри
+                    </h1>
+                        </div>
+                  
+                    </div>
+                </div>
+             <!--Навигация -->     
+         <nav>
+            <ul class = "menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="games.html">Игри</a></li>
+                <li><a href="reviews.html">Ревюта</a></li>
+                <li><a href="upcoming.html">Предстоящи игри</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="contact.html">Контакти</a></li>           
+            </ul>
+        </nav>
+       </div>
+       </header>
+       
+           <!--Основно съдържание -->
+  <main>
+        <!-- Цялостно съдържание  -->
+    <div class="container">
+        <!-- област за всички игри -->
+        <div class="content">
+            <!-- Главно заглавие на страницата -->
+            <h2>Вечните Шампиони: Игрите с Най-добри Оценки</h2>
+            
+            <!-- Първа игра-->
+            <div class="game-section">
+                <!-- Заглавие на играта -->
+                <h3>Red Dead Redemption 2</h3>
+                
+                <!-- Статистическите данни  -->
+                <div class="game-stats">
+                    <div class="stats">
+                        <div class="stat-item">
+                            <strong>Рейтинг:</strong> 9.7/10
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Описание на играта -->
+                <div class="game-text">
+                    <p>Red Dead Redemption 2 е екшън-приключенска игра от 2018 г., разработена и публикувана от Rockstar Games. Играта е третата част от поредицата Red Dead и е предистория на играта Red Dead Redemption от 2010. Тя спечели повече от 175 награди „Игра на годината" и получи множество други отличия от церемонии по награждаване и гейминг издания. Счита се за едно от най-значимите заглавия за конзолни игри от осмо поколение и сред най-великите видеоигри, правени някога.</p>
+                </div>
+                
+                <!-- Контейнер за изображението на играта с Javascript манипулации -->
+                <div class="game-image-container">
+                   
+                    <img id="rdr2" src="images/RDR2-Icon3.jpg" alt="Red Dead Redemption 2" onclick="f1()" ondblclick="f2()">
+                </div>
+            </div>
+            
+            <!-- Втора игра-->
+            <div class="game-section">
+                <h3>The Last of Us</h3>
+                
+                <!-- Статистиката на играта -->
+                <div class="game-stats">
+                    <div class="stats">
+       
+                        <div class="stat-item">
+                            <strong>Рейтинг:</strong> 9.6/10
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Описание  на играта-->
+                <div class="game-text">
+                    <p>The Last of Us е екшън-приключенска поредица от видеоигри и медиен франчайз, създаден от Naughty Dog и публикуван от Sony Interactive Entertainment. Поредицата се развива в постапокалиптични Съединени щати, опустошени от канибалистични хора, заразени с мутирала гъба от рода Cordyceps. Серията получи признание от критиката и спечели множество награди, включително няколко признания за Игра на годината; първата игра е класирана като една от най-великите видеоигри, правени някога, а втората спечели повече от 320 награди за Игра на годината.</p>
+                </div>
+                
+                <!-- Контейнер за изображението с Javascript манипулации -->
+                <div class="game-image-container">
+                    
+                    <img id="tlu" src="images/hq720.jpg" alt="The Last Of Us" onclick="f3()" ondblclick="f4()">
+                </div>
+            </div>
+            
+            <!-- Трета игра-->
+            <div class="game-section">
+                <h3>Baldur's Gate 3</h3>
+                
+                <!-- Статистически данни -->
+                <div class="game-stats">
+                    <div class="stats">
+                        <div class="stat-item">
+                            <strong>Рейтинг:</strong> 9.6/10
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Описание на играта -->
+                <div class="game-text">
+                    <p>Baldur's Gate 3 е ролева видеоигра от 2023 г. от Larian Studios. Играчите създават персонализируем герой и се впускат в куестове с група от озвучени спътници. Baldur's Gate 3 получи признание от критиката и рекорден успех на наградите, като похвалите бяха насочени към кинематографичната графика, сценария, качеството на продукцията и изпълнението. Тя стана първото заглавие, спечелило наградата „Игра на годината" на всичките пет големи церемонии по връчване на награди за видеоигри и получи същото отличие от няколко издания.</p>
+                </div>
+                
+                <!-- Контейнер за изображението с Javascipt манипулации -->
+                <div class="game-image-container">
+                    
+                    <img id="bl3" src="images/bg3.jpg" alt="Baldur Gates 3" onclick="f5()" ondblclick="f6()">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+         <!-- Футър (долна част на сайта) с авторски права и информация -->
+     <footer class="footer">
+            <p class="text_footer">&reg; Svilen Hristov Hristov <br>126425329</p>
+        </footer>
+</body>
+</html>

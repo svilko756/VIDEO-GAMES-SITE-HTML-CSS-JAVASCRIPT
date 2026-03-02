@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Начало</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Връзка към външен CSS файл  -->
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+          <!-- Връзка към Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+          <!---Икононка -->
+        <link rel="icon" href="images/5930147.ico" type="image/x-icon">
+          <!-- Връзка към външен JavaScript-->
+        <script src="nch.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Хедър -->
+        <header>  
+                <div class="header">
+                <div class="movedown"> 
+                    <div class ="header-row">
+                        <div class ="header-row(1)">
+                        <!--Лого -->  
+                    <a href="index.html">
+                      <img  class ="logo" src="683-6838284_pc-logo-png.png" alt="logo"/>
+                    </a>
+                        </div>
+                        <div class ="header-row(2)">
+                   <!--Заглавие -->
+                    <h1>
+                        Компютърни игри
+                    </h1>
+                        </div>
+                  
+                    </div>
+                </div>
+             <!--Навигация -->     
+         <nav>
+            <ul class = "menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="games.html">Игри</a></li>
+                <li><a href="reviews.html">Ревюта</a></li>
+                <li><a href="upcoming.html">Предстоящи игри</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="contact.html">Контакти</a></li>           
+            </ul>
+        </nav>
+       </div>
+       </header>
+       
+           <!--Основно съдържание -->
+        <main>
+                 <!-- Интерактивен елемент: въвеждане на име от потребител -->
+                <h3 id="Title">Моля въведето вашето име</h3>
+                 <!-- Поле за въвеждане -->
+               <input type="text" placeholder="Въведете име" id="textBox1">
+               <br>
+                 <!--Бутон за изпращане на данни -->
+             <button type="button" id="submit" onclick="h3()">Натисни</button>
+            
+            <div class ="main">
+                 <!--Цитат,различаващ се от основния текст-->
+           <blockquote>"Геймингът не е хоби,а цял свят"</blockquote>
+                  <!-- Инструкции за потребител за JS интеракция -->
+           <p class ="side">Натисни върху изображенията</p>
+           <!-- Параграфи и интерактивни js изображения за сайта -->
+           <p class="paragraph">Компютърните игри отдавна не са просто забавление. Те са изкуство, спорт и най-вече – необятна вселена от преживявания, която се развива с шеметна скорост. Тук, в нашия портал, ние сме посветени на това да бъдем вашият надежден гид в този динамичен свят.</p>
+           
+           <img id ="izbr1" src="images/1920-x-1080-hd-gaming-kkdkk7zpb6c4icuh.jpg" alt="" onclick="f1()" ondblclick="f2()"/>
+         
+           <p class="paragraph">Независимо дали сте ветеран, който търси най-новите стратегии и eSports турнири, или сте нов в хобито и търсите перфектното RPG, за да започнете – ние имаме всичко, от което се нуждаете.</p>
+           <img id ="izbr2" src="images/1920-x-1080-gaming-02ugcij9dqeskdb3.jpg" alt="" onclick="f3()" ondblclick="f4()"/>
+           
+           <p class="paragraph">Технологиите напредват всеки ден, а с тях и качеството на виртуалните светове, в които можем да се потопим. 2026 г. обещава да бъде една от най-силните години в гейминга, с дългоочаквани продължения, нови франчайзи и революционни иновации в графиката и геймплея.</p>
+           <img id ="izbr3" src="images/1920-x-1080-gaming-purple-ps4-controller-q8wayl5ss13b47bw.jpg" alt="" onclick="f5()" ondblclick="f6()"/>
+            </div>
+        </main>
+       
+            
+          <!-- Футър (долна част на сайта) с авторски права и информация -->
+        <footer class="footer">
+            <p class="text_footer">&reg; Svilen Hristov Hristov <br>126425329</p>
+        </footer>
+       
+    </body>
+</html>

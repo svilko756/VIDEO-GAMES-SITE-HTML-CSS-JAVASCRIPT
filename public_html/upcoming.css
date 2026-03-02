@@ -1,0 +1,182 @@
+/* нулиране на основни стилове */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* width включва padding и border */
+}
+/* Основни стилове за цялата страницат */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2d2d2d; /* Основен тъмен фон */
+    color: white;
+}
+/* Хедър  */
+.header {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-bottom: 3px solid #00BFFF; /* Синя  линия */
+    text-align: center;
+    overflow: hidden; /*Oтрязване на плаващи елементи */
+}
+/* Лого*/
+.logo {
+    width: 70px;
+    margin: 0 auto 10px auto; /* Центриране с отстъп отдолу */
+    display: block;
+}
+/*Заглавие на сайта */
+.header h1 {
+    color: #00BFFF;
+    font-family: "Georgia", serif;
+    font-size: 28px;
+    margin: 10px 0;
+    clear: both; /* Изчиства плаващи елементи */
+}
+/* Навигационен контейнер */
+nav {
+    margin-top: 15px;
+    clear: both;
+}
+/* Меню като хоризонтален списък */
+.menu {
+    list-style: none; /* Без точки пред елементите */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* Елементи на менюто - показвани в ред */
+.menu li {
+    display: inline-block;
+    margin: 0 5px 5px 5px; /* Хоризонтален и вертикален отстъп */
+}
+/* Стилове за връзките в менюто */
+.menu a {
+    color: white;
+    text-decoration: none; /* Без подчертаване */
+    padding: 8px 15px;
+    background: #2d2d2d;
+    border-radius: 5px; /* Закръглени ъгли */
+    display: block;
+}
+/* Ефект при посочване с мишката */
+.menu a:hover {
+    background: #00BFFF; /* Промяна на цвета на фона */
+}
+/*Описание за бутона */
+#wtext{
+    text-align: center;
+    margin-bottom:1%;
+}
+/*Контрейнер за бутона */
+.mydiv{
+  text-align:center;
+}
+/*Бутон */
+.button{
+    background-color: black;
+    color: white;     
+    border-radius: 20px;
+    border: 2px solid #00BFFF;
+    font-size: 22px;
+    padding: 10px 25px;
+    cursor: pointer;   
+    transition: 0.3s;
+}
+/*Основно съдържание */
+main {
+    padding: 20px;
+    background-image: url('images/NEuip.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh; /* Минимална височина 70% от екрана */
+}
+/*Заглавие на таблицата */
+caption{
+    text-align:center;
+    font-size: 2.5rem;
+    font-family: Open Sans;
+    font-weight: 500;  /*Тегло на текста */
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+/*Заглавна част */
+thead{
+    background-color: #000;
+    color:white;
+}
+/* Всички клетки */
+th, td{
+    padding:10px;
+    border: 1px solid #000000;
+}
+/* Клетки с данни */
+td{
+    background-color:#708090;
+}
+/* Footer - долна част на страницата */
+.footer {
+    background-color: #2d2d2d;  
+    text-align: center;         
+    padding: 20px;              
+    border-top: 3px solid #00BFFF; 
+}
+
+/* Стилове за текста във футъра */
+.text_footer {
+    color: #00BFFF;           
+}
+/*MEДИЙНА ЗАЯКА ЗА ТЕЛЕФОН */
+@media only screen and (max-width: 480px){
+    caption{
+       display:none;
+    }
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 8px; 
+        border: 2px solid #000000;
+    }
+
+    table td {
+        text-align: right; 
+        padding-left: 45%; 
+        position: relative;
+        border-bottom: 1px solid #444;
+    }
+  
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+        color: white;
+    }
+
+    table td:last-child {
+        border-bottom: none;
+    }
+    .button{
+        margin-bottom:2%;
+    }
+}
+/*MEДИЙНА ЗАЯКА ЗА ТАБЛЕТ */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    table {
+        font-size: 14px; 
+    }
+    th, td {
+        padding: 8px 5px; 
+    }
+
+}

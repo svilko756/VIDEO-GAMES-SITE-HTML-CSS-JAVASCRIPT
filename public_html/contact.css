@@ -1,0 +1,260 @@
+/* нулиране на основни стилове */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* width включва padding и border */
+}
+/* Основни стилове за цялата страницат */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2d2d2d; /* Основен тъмен фон */
+    color: white;
+}
+/* Хедър  */
+.header {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-bottom: 3px solid #00BFFF; /* Синя  линия */
+    text-align: center;
+    overflow: hidden; /*Oтрязване на плаващи елементи */
+}
+/* Лого*/
+.logo {
+    width: 70px;
+    margin: 0 auto 10px auto; /* Центриране с отстъп отдолу */
+    display: block;
+}
+/*Заглавие на сайта */
+.header h1 {
+    color: #00BFFF;
+    font-family: "Georgia", serif;
+    font-size: 28px;
+    margin: 10px 0;
+    clear: both; /* Изчиства плаващи елементи */
+}
+/* Навигационен контейнер */
+nav {
+    margin-top: 15px;
+    clear: both;
+}
+/* Меню като хоризонтален списък */
+.menu {
+    list-style: none; /* Без точки пред елементите */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* Елементи на менюто - показвани в ред */
+.menu li {
+    display: inline-block;
+    margin: 0 5px 5px 5px; /* Хоризонтален и вертикален отстъп */
+}
+/* Стилове за връзките в менюто */
+.menu a {
+    color: white;
+    text-decoration: none; /* Без подчертаване */
+    padding: 8px 15px;
+    background: #2d2d2d;
+    border-radius: 5px; /* Закръглени ъгли */
+    display: block;
+}
+/* Ефект при посочване с мишката */
+.menu a:hover {
+    background: #00BFFF; /* Промяна на цвета на фона */
+}
+/*Основно съдържание */
+main {
+    background-image: url('images/NEuip.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*Неподвижен при скрол */
+    padding: 10px 10%;
+    min-height: 70vh;   /*Мин височина 70 8/
+    overflow: hidden;  /*Изчезва на съдържание след конт */
+    width: 100%;
+    padding-top: 0;  /* Без вътр.отстъп */
+}
+/*Заглавие h2 */
+h2{
+  font-size: 2.5rem;
+  font-family: Open Sans;
+  font-weight: 500;
+  text-transform: uppercase; /*Главни букви*/
+  letter-spacing: 2px;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+  margin-left:5%;
+  text-align:center;
+}
+/*Текстово поле и област */
+input, textarea {
+    background-color: white;
+    width: 50%;
+    font-size: 20px;  
+    padding: 18px;
+    border-radius: 8px;
+    border: 2px solid #00BFFF;  /*Синя рамка*/
+    margin-bottom: 20px;
+}
+/*Текстова област  размери*/
+textarea {
+    margin-bottom: 25px;
+    min-height: 150px; 
+}
+/*Бутон */
+button {
+    background-color: black;
+    color: white;     
+    border-radius: 20px;
+    border: 2px solid #00BFFF;
+    font-size: 22px;
+    padding: 10px 25px;
+    cursor: pointer;   
+    display: block;    /*Без inline свойства */
+    margin: 20px auto; 
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    margin-left:3%;
+}
+/*Рамка от Google Maps */
+iframe{
+    float:right;
+    margin-top:10%;
+}
+/* Footer - долна част на страницата */
+.footer {
+    background-color: #2d2d2d;  
+    text-align: center;         
+    padding: 20px;              
+    border-top: 3px solid #00BFFF; 
+}
+
+/* Стилове за текста във футъра */
+.text_footer {
+    color: #00BFFF;           
+}
+/*МЕДИЙНА ЗАЯВКА ЗА ТЕЛЕФОН */
+@media only screen and (max-width: 480px){
+     main {
+        padding: 10px 5%;
+        text-align:center;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0;
+        letter-spacing: 1px;
+    }
+    
+    input, textarea {
+        width: 60%;
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    textarea {
+        min-height: 120px;
+    }
+   
+    button {
+        width: 60%;
+        font-size: 18px;
+        padding: 12px;
+        margin: 0 auto 20px auto;
+    }
+    
+    iframe {
+        float: none;
+        width: 65%;
+        height: 250px;
+        margin: 20px auto;
+        display: block;
+    }
+}
+/*МЕДИЙНА ЗАЯВКА ЗА ТАБЛЕТ */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+   body {
+        font-size: 15px;
+    }
+   main {
+        padding: 20px 8%;
+        background-attachment: scroll;
+    }
+   h2 {
+       font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+       letter-spacing: 1.5px;
+    }
+    
+   input, textarea {
+        width: 50%;
+        font-size: 18px;
+        padding: 15px;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+    
+   textarea {
+        min-height: 140px;
+    }
+    
+    button {
+        width: 50%;
+        font-size: 20px;
+        padding: 12px;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    iframe {
+        float: none;
+        width: 70%;
+        height: 280px;
+        margin: 30px auto;
+        display: block;
+    }
+  
+}
+/*МЕДИЙНА ЗАЯВКА ЗА ТЕЛЕФОН */
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    main {
+        padding: 30px 10%;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 30px 0;
+    }
+    
+    @media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .form {
+        width: 60%;
+    }
+    
+    input, textarea{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    button{
+        width: 80%;
+        float: none;
+        margin-left: 8%;
+    }
+    
+    iframe {
+        width: 35%;
+        height: 280px;
+        margin: 0;
+        margin-right:8%;
+    }
+}
+}
